@@ -4,7 +4,7 @@ $session = $_SESSION;
 $request = $_REQUEST;
 
 // Загрузка необходимой конфигурации из JSON файла
-$configFile = __DIR__.'/config.json';
+$configFile = __DIR__.'/config_example.json';
 if (file_exists($configFile)) {
     $config = json_decode(file_get_contents($configFile), true);
     $db_host = $config['database']['host'];
