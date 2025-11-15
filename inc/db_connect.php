@@ -1,7 +1,7 @@
 <?php
 session_start();
 $session = $_SESSION;
-$request = $_REQUEST;
+$request = $_REQUEST; 
 
 // Загрузка необходимой конфигурации из JSON файла
 $configFile = __DIR__.'/config_example.json';
